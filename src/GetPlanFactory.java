@@ -13,8 +13,11 @@ public class GetPlanFactory{
               return new CommercialPlan();  
           }   
         else if(planType.equalsIgnoreCase("INSTITUTIONALPLAN")) {  
-              return new InstitutionalPlan();  
-        }  
+              return new InstitutionalPlan();
+              
+        } else if(planType.equalsIgnoreCase("SP")) {  
+            return new Studenplan();
+        }   
     return null;  
  }  
 }//end of GetPlanFactory class.  
